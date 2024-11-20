@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from 'react';
-import { useParams } from 'react-router-dom'; // Hook para acceder a los parámetros de la ruta
+import { useParams } from 'react-router-dom';
 
 export default function BusId() {
-    const { id } = useParams(); // Extrae el parámetro `id` de la URL
+    const { id } = useParams();
     const [bus, setBus] = useState(null);
     const [error, setError] = useState(null);
     const apiUrlBus = `http://localhost:8080/bus/${id}`;
